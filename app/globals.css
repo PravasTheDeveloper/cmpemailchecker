@@ -173,3 +173,51 @@ body {
   50% { left: 0%; }
   100% { left: 100%; }
 }
+
+/* Mobile Responsive Improvements */
+@media (max-width: 640px) {
+  /* Ensure touch targets are large enough */
+  .btn-gradient {
+    min-height: 44px;
+  }
+  
+  /* Improve hover effects for mobile */
+  .hover-lift:hover {
+    transform: none;
+  }
+  
+  /* Better text wrapping for mobile */
+  .break-all {
+    word-break: break-all;
+    overflow-wrap: break-word;
+  }
+  
+  /* Improved spacing for small screens */
+  .space-y-2 > * + * {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Tablet specific adjustments */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .card-gradient {
+    padding: 1.5rem;
+  }
+}
+
+/* Ensure inputs are accessible on all devices */
+input[type="email"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Better button accessibility */
+button:focus {
+  outline: 2px solid #3B82F6;
+  outline-offset: 2px;
+}
+
+/* Prevent horizontal scrolling on small screens */
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
